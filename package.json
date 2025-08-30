@@ -1,7 +1,7 @@
 {
-  "name": "under-construction-site",
+  "name": "meu-portfolio",
   "version": "1.0.0",
-  "description": "A beautiful under construction website",
+  "description": "Portfólio pessoal profissional para mostrar projetos e habilidades",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -13,7 +13,7 @@
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
-  "keywords": ["website", "under-construction", "nodejs"],
-  "author": "Your Name",
+  "keywords": ["portfolio", "personal-website", "developer", "nodejs", "express"],
+  "author": "Seu Nome",
   "license": "MIT"
 }
