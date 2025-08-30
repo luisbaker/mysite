@@ -32,7 +32,7 @@ const languages = {
             },
             project3: {
                 title: "CellularFR",
-                description: "Projeto pra banco de dados Netmonster com todas as antenas da Orange France, mapeando a infraestrutura de telecom francesa."
+                description: "Projeto pra banco de dados Netmonster com todas as antenas da Orange France, mapeando a infraestrutura francesa."
             }
         },
         contact: {
@@ -87,7 +87,7 @@ const languages = {
             },
             project3: {
                 title: "CellularFR",
-                description: "Project for Netmonster database with all Orange France antennas, mapping French telecom infrastructure."
+                description: "Project for Netmonster database with all Orange France antennas, mapping French infrastructure."
             }
         },
         contact: {
@@ -142,7 +142,7 @@ const languages = {
             },
             project3: {
                 title: "CellularFR",
-                description: "Projet pour base de données Netmonster avec toutes les antennes Orange France, cartographiant l'infrastructure télécom française."
+                description: "Projet pour base de données Netmonster avec toutes les antennes Orange France, cartographiant l'infrastructure française."
             }
         },
         contact: {
