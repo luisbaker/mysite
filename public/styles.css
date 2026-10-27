@@ -691,6 +691,34 @@ section {
     line-height: 1.6;
 }
 
+.realisation-client {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #00d4aa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.realisation-skills {
+    list-style: none;
+    margin-bottom: 1.25rem;
+}
+
+.realisation-skills li {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    padding: 0.25rem 0 0.25rem 1.4rem;
+    position: relative;
+}
+
+.realisation-skills li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #c084fc;
+}
+
 /* Skills Section */
 .skills {
     background: #111;
