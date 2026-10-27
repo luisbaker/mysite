@@ -828,6 +828,31 @@ section {
     margin-bottom: 1rem;
 }
 
+.veille-sources ul {
+    list-style: none;
+}
+
+.veille-sources li {
+    color: #94a3b8;
+    padding: 0.75rem 0;
+    line-height: 1.6;
+    border-bottom: 1px solid #333;
+}
+
+.veille-sources li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.veille-sources li i {
+    color: #00d4aa;
+    width: 1.4rem;
+}
+
+.veille-sources strong {
+    color: #e2e8f0;
+}
+
 /* Contact Section */
 .contact {
     background: #111;
