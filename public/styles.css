@@ -864,6 +864,15 @@ section {
     margin-top: 1rem;
 }
 
+.synthese-download {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.synthese-download .btn i {
+    margin-right: 0.5rem;
+}
+
 /* Veille Section */
 .veille {
     background: #0a0a0a;

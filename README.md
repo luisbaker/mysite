@@ -27,6 +27,8 @@ Puis ouvrir http://localhost:3000. `npm run dev` relance le serveur à chaque mo
 public/
 ├── index.html   # Contenu du site
 ├── styles.css   # Styles (thème sombre)
-└── script.js    # Menu mobile, animations, effet terminal
+├── script.js    # Menu mobile, animations, effet terminal
+└── docs/        # Tableau de synthèse E5 en PDF (téléchargeable sur le site)
+docs/            # Tableau de synthèse E5 rempli (xlsx, modèle officiel session 2026)
 server.js        # Serveur Express (+ /health pour Koyeb)
 ```
