@@ -7,7 +7,7 @@ Portfolio de Luis Ferreira, étudiant en BTS SIO option SISR en alternance chez 
 1. **Accueil** : présentation rapide
 2. **Profil** : formation, entreprise, poste
 3. **Alternance** : BoucheCousue et mes missions (réseau, WiFi, accès internet, support, sûreté)
-4. **Projets personnels** : Mirror, serveur Proxmox, Portugal Towers, CellularFR, Mobilespectrum, Edge Linky TIC
+4. **Projets personnels** : Mirror, serveur Proxmox, Portugal Towers, CellularFR, Edge Linky TIC
 5. **Compétences** : les 3 blocs du BTS SIO SISR et les outils utilisés
 6. **Veille technologique** : le Wi-Fi 7
 7. **Contact**
