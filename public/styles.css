@@ -864,6 +864,21 @@ section {
     margin-top: 1rem;
 }
 
+.pdf-frame {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.pdf-preview {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .synthese-download {
     text-align: center;
     margin-top: 2rem;
