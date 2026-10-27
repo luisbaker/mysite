@@ -1,154 +1,32 @@
-# 🚀 Meu Portfólio Pessoal
+# Luis Ferreira · Portfolio BTS SIO SISR
 
-Um portfólio profissional e moderno desenvolvido para mostrar meus projetos, habilidades e experiência como desenvolvedor.
+Portfolio de Luis Ferreira, étudiant en BTS SIO option SISR en alternance chez [BoucheCousue](https://bouchecousue.com).
 
-## ✨ Características
+## Sections
 
-- **Design Responsivo**: Funciona perfeitamente em todos os dispositivos
-- **Navegação Suave**: Scroll suave entre seções
-- **Animações**: Efeitos visuais atrativos e profissionais
-- **Formulário de Contato**: Sistema de contato funcional
-- **Performance Otimizada**: Carregamento rápido e eficiente
-- **SEO Friendly**: Estrutura semântica para melhor indexação
+1. **Accueil** : présentation rapide
+2. **Profil** : formation, entreprise, poste
+3. **Alternance** : BoucheCousue et mes missions (réseau, WiFi, accès internet, support, sûreté)
+4. **Projets personnels** : Mirror, serveur Proxmox, Portugal Towers, CellularFR, Mobilespectrum, Edge Linky TIC
+5. **Compétences** : les 3 blocs du BTS SIO SISR et les outils utilisés
+6. **Veille technologique** : le Wi-Fi 7
+7. **Contact**
 
-## 🛠️ Tecnologias Utilizadas
+## Lancer le site
 
-- **Frontend**: HTML5, CSS3, JavaScript ES6+
-- **Backend**: Node.js, Express.js
-- **Estilização**: CSS Grid, Flexbox, Animações CSS
-- **Fontes**: Google Fonts (Inter)
-- **Ícones**: Font Awesome 6
-- **Responsividade**: Mobile-first design
-
-## 📱 Seções do Site
-
-1. **Hero Section**: Apresentação principal com call-to-action
-2. **Sobre**: Informações pessoais e estatísticas
-3. **Projetos**: Portfólio de trabalhos realizados
-4. **Habilidades**: Tecnologias e ferramentas dominadas
-5. **Contato**: Formulário e informações de contato
-
-## 🚀 Como Executar
-
-### Pré-requisitos
-- Node.js (versão 14 ou superior)
-- npm ou yarn
-
-### Instalação
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/meu-portfolio.git
-cd meu-portfolio
-```
-
-2. Instale as dependências:
 ```bash
 npm install
-```
-
-3. Execute o projeto:
-```bash
-# Modo desenvolvimento (com auto-reload)
-npm run dev
-
-# Modo produção
 npm start
 ```
 
-4. Acesse no navegador:
-```
-http://localhost:3000
-```
+Puis ouvrir http://localhost:3000. `npm run dev` relance le serveur à chaque modification (nodemon).
 
-## 📁 Estrutura do Projeto
+## Structure
 
 ```
-meu-portfolio/
-├── public/
-│   ├── index.html          # Página principal
-│   ├── styles.css          # Estilos CSS
-│   └── script.js           # JavaScript interativo
-├── server.js               # Servidor Express
-├── package.json            # Dependências e scripts
-└── README.md              # Documentação
+public/
+├── index.html   # Contenu du site
+├── styles.css   # Styles (thème sombre)
+└── script.js    # Menu mobile, animations, effet terminal
+server.js        # Serveur Express (+ /health pour Koyeb)
 ```
-
-## 🎨 Personalização
-
-### Alterar Informações Pessoais
-
-1. **Nome e Título**: Edite o arquivo `public/index.html`
-2. **Descrição**: Modifique os textos nas seções
-3. **Projetos**: Adicione seus próprios projetos na seção de projetos
-4. **Habilidades**: Ajuste as barras de progresso conforme suas habilidades
-5. **Contato**: Atualize emails e links de redes sociais
-
-### Alterar Cores e Estilo
-
-1. **Paleta de Cores**: Modifique as variáveis CSS no arquivo `public/styles.css`
-2. **Fontes**: Altere as fontes importadas do Google Fonts
-3. **Animações**: Ajuste as durações e efeitos das animações
-
-## 🔧 Funcionalidades JavaScript
-
-- **Navegação Mobile**: Menu hambúrguer responsivo
-- **Scroll Suave**: Navegação entre seções
-- **Animações**: Efeitos de entrada baseados em scroll
-- **Formulário**: Validação e envio de mensagens
-- **Notificações**: Sistema de alertas para o usuário
-- **Efeitos Visuais**: Hover effects e transições
-
-## 📱 Responsividade
-
-O site é totalmente responsivo e funciona em:
-- 📱 Smartphones (320px+)
-- 📱 Tablets (768px+)
-- 💻 Desktops (1024px+)
-- 🖥️ Telas grandes (1200px+)
-
-## 🚀 Deploy
-
-### Opções de Deploy
-
-1. **Vercel**: Deploy automático do GitHub
-2. **Netlify**: Deploy com drag & drop
-3. **Heroku**: Deploy via Git
-4. **VPS**: Deploy manual em servidor próprio
-
-### Deploy no Vercel
-
-1. Conecte seu repositório GitHub ao Vercel
-2. Configure o build command: `npm start`
-3. Configure o output directory: `public`
-4. Deploy automático a cada push
-
-## 🤝 Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-
-- Reportar bugs
-- Sugerir novas funcionalidades
-- Enviar pull requests
-- Melhorar a documentação
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 📞 Contato
-
-- **Email**: seu.email@exemplo.com
-- **LinkedIn**: [linkedin.com/in/seuperfil](https://linkedin.com/in/seuperfil)
-- **GitHub**: [github.com/seuperfil](https://github.com/seuperfil)
-
-## 🙏 Agradecimentos
-
-- [Font Awesome](https://fontawesome.com/) pelos ícones
-- [Google Fonts](https://fonts.google.com/) pelas fontes
-- [Express.js](https://expressjs.com/) pelo framework backend
-- Comunidade open source por todas as inspirações
-
----
-
-⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!

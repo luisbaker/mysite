@@ -1,7 +1,7 @@
 {
-  "name": "meu-portfolio",
+  "name": "luis-ferreira-portfolio",
   "version": "1.0.0",
-  "description": "Portfólio pessoal profissional para mostrar projetos e habilidades",
+  "description": "Portfolio BTS SIO SISR de Luis Ferreira",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -13,7 +13,7 @@
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
-  "keywords": ["portfolio", "personal-website", "developer", "nodejs", "express"],
-  "author": "Seu Nome",
+  "keywords": ["portfolio", "bts-sio", "sisr", "nodejs", "express"],
+  "author": "Luis Ferreira",
   "license": "MIT"
 }
