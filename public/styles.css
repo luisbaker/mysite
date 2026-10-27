@@ -792,6 +792,78 @@ section {
     text-align: center;
 }
 
+/* Synthesis Section */
+.synthese {
+    background: #0a0a0a;
+}
+
+.section-intro {
+    text-align: center;
+    color: #94a3b8;
+    max-width: 700px;
+    margin: -2rem auto 2.5rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 16px;
+}
+
+.synthese-table {
+    width: 100%;
+    min-width: 780px;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.synthese-table th,
+.synthese-table td {
+    padding: 0.9rem 0.75rem;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.synthese-table th {
+    background: #141414;
+    color: #00d4aa;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.synthese-table th:first-child,
+.synthese-table td:first-child {
+    text-align: left;
+}
+
+.synthese-table td {
+    color: #cbd5e1;
+}
+
+.synthese-table td strong {
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+.synthese-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.synthese-table td.check {
+    color: #c084fc;
+    font-weight: 700;
+}
+
+.synthese-legend {
+    color: #64748b;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
 /* Veille Section */
 .veille {
     background: #0a0a0a;
