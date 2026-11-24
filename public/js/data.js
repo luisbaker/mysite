@@ -350,8 +350,8 @@ const PORTFOLIO_DATA = {
             presentationEntreprise: "BoucheCousue est un intégrateur IT parisien qui prend en charge l'informatique de ses clients de la conception à l'exploitation : accès internet (parc FTTH, FTTO et 4G/5G), réseau LAN et Wi-Fi haute densité, infogérance, téléphonie IP, visioconférence et sûreté (vidéosurveillance, contrôle d'accès, alarme) pour des grands comptes, startups, coworkings, hôtels et boutiques.",
             contexte: "Montée en responsabilité sur des projets d'infrastructure d'envergure (nouveaux sièges sociaux, liaisons fibre inter-sites à très haut débit, audits Wi-Fi) et maintien en condition opérationnelle du parc clients en infogérance.",
             missions: [
-                "Participation au déploiement complet du réseau LAN et Wi-Fi du nouveau siège de Qonto à Paris (11 000 m², 9 étages, ~900 postes de travail).",
-                "Participation à l'interconnexion en niveau 3 (routage L3) à 100 Gb/s entre les sites de Paris 20e et Montreuil pour Polyson via fibre noire RATP Connect / IELO.",
+                "Participation au déploiement complet d'infrastructures réseaux LAN et Wi-Fi haute densité pour des sièges sociaux d'entreprise à Paris (immeubles multi-étages, centaines de postes de travail).",
+                "Participation à des interconnexions inter-sites en niveau 3 (routage L3) à 100 Gb/s en Île-de-France via fibre optique dédiée.",
                 "Réalisation d'audits Wi-Fi sur site avec sonde radio : génération de cartes de couverture (heatmaps) et préconisations d'implantation et de plan de fréquences.",
                 "Conception et exploitation de réseaux de coworkings et lieux ouverts au public : Wi-Fi haute densité et cloisonnement sécurisé entre entreprises résidentes.",
                 "Mise en service de liens fibre FTTH/FTTO avec bascule automatique (failover) sur secours 4G/5G."
@@ -386,20 +386,20 @@ const PORTFOLIO_DATA = {
     // ------------------------------------------------------------------------
     realisations: [
         {
-            id: "real-qonto",
-            titre: "Déploiement du réseau LAN & Wi-Fi du nouveau siège de Qonto",
-            sousTitre: "Client Qonto (via BoucheCousue) · 11 000 m² sur 9 étages",
+            id: "real-siege-lan",
+            titre: "Déploiement réseau LAN & Wi-Fi haute densité d'un siège social",
+            sousTitre: "En entreprise (BoucheCousue) · Immeuble de 11 000 m² sur 9 étages (~900 postes)",
             categorie: "alternance",
             categorieLabel: "En entreprise (BoucheCousue)",
             periode: "2025 – 2026",
-            lieu: "Paris 10e (Impasse Bonne Nouvelle)",
+            lieu: "Paris",
             icone: "fas fa-building",
             dansTableauSynthese: true,
-            resume: "Participation au déploiement complet de l'infrastructure réseau filaire et sans-fil du nouveau siège social de la néobanque Qonto : 11 000 m² répartis sur 9 étages pour raccorder environ 900 postes de travail en LAN et Wi-Fi haute densité.",
+            resume: "Participation au déploiement complet de l'infrastructure réseau filaire et sans-fil d'un nouveau siège social d'entreprise à Paris : 11 000 m² répartis sur 9 étages pour raccorder environ 900 postes de travail en LAN et Wi-Fi haute densité.",
             technologies: ["LAN", "Wi-Fi", "Switchs PoE", "VLAN", "Cisco Meraki / UniFi", "Brassage & Recette"],
             blocs: ["Bloc 1", "Bloc 2", "Bloc 3"],
             competencesValidees: ["B1.4", "B1.5", "B2.2", "B3.5"],
-            contexte: "Qonto, néobanque européenne de référence pour les entreprises et les indépendants, a emménagé dans un nouveau siège social situé impasse Bonne Nouvelle à Paris (10e). Le bâtiment couvre 11 000 m² sur 9 étages et devait accueillir près de 900 collaborateurs et postes de travail avec une exigence élevée de disponibilité et de débit.",
+            contexte: "Dans le cadre d'un emménagement dans un nouveau siège social situé à Paris, le bâtiment de 11 000 m² répartis sur 9 étages devait accueillir près de 900 collaborateurs et postes de travail avec une exigence élevée de disponibilité, de sécurité et de débit.",
             besoin: "Fournir une connectivité filaire (LAN) et sans-fil (Wi-Fi) fiable, performante et sécurisée sur l'ensemble des 9 plateaux, des salles de réunion et des espaces communs, dans un calendrier d'emménagement contraint.",
             objectifs: [
                 "Raccorder et brasser l'ensemble des prises RJ45 destinées aux ~900 postes de travail et équipements (bornes Wi-Fi, salles de visio, contrôle d'accès).",
@@ -430,69 +430,69 @@ const PORTFOLIO_DATA = {
                     solution: "Ajustement de la puissance d'émission (Tx Power), répartition des canaux sur la bande 5 GHz et largeur de canal adaptée à la densité."
                 }
             ],
-            resultats: "Mise en production réussie dans les délais pour l'emménagement des ~900 collaborateurs de Qonto : réseau filaire et Wi-Fi stable, supervisé de manière centralisée et conforme aux exigences de sécurité.",
+            resultats: "Mise en production réussie dans les délais pour l'emménagement des ~900 collaborateurs : réseau filaire et Wi-Fi stable, supervisé de manière centralisée et conforme aux exigences de sécurité.",
             captures: [
                 { titre: "Architecture LAN multi-étages (9 plateaux / 900 postes)", legende: "Distribution par baies d'étage, switchs PoE et couverture Wi-Fi haute densité." },
                 { titre: "Segmentation VLAN & Supervision Cloud", legende: "Séparation des flux utilisateurs, invités et équipements techniques." }
             ],
             liens: {
-                docPdf: "docs/dossier-technique-qonto.pdf",
+                docPdf: "docs/dossier-technique-siege-lan.pdf",
                 siteExterne: "",
                 github: ""
             }
         },
         {
-            id: "real-polyson",
-            titre: "Interconnexion L3 Paris ↔ Montreuil à 100 Gb/s (Polyson)",
-            sousTitre: "Client Polyson (via BoucheCousue) · Fibre noire RATP Connect & IELO",
+            id: "real-liaison-100g",
+            titre: "Interconnexion fibre optique L3 inter-sites à 100 Gb/s",
+            sousTitre: "En entreprise (BoucheCousue) · Routage niveau 3 Paris ↔ Montreuil",
             categorie: "alternance",
             categorieLabel: "En entreprise (BoucheCousue)",
             periode: "2025 – 2026",
-            lieu: "Paris 20e ↔ Montreuil",
+            lieu: "Paris ↔ Montreuil",
             icone: "fas fa-route",
             dansTableauSynthese: true,
-            resume: "Participation à l'interconnexion en niveau 3 (routage L3) entre le site de post-production cinéma de Polyson à Paris (20e) et son studio de musique à Montreuil, via une liaison fibre optique à 100 Gb/s empruntant les tunnels de la ligne 9 du métro (RATP Connect / IELO).",
-            technologies: ["Fibre optique", "100 Gb/s", "Routage L3", "RATP Connect", "IELO", "QSFP28"],
+            resume: "Participation à l'interconnexion en niveau 3 (routage L3) entre deux sites de production multimédia distants (Paris et Montreuil), via une liaison fibre optique dédiée à 100 Gb/s empruntant les tunnels du métro parisien.",
+            technologies: ["Fibre optique", "100 Gb/s", "Routage L3", "QSFP28", "Architecture inter-sites"],
             blocs: ["Bloc 1", "Bloc 2"],
             competencesValidees: ["B1.4", "B1.5", "B2.1", "B2.2"],
-            contexte: "Polyson est une manufacture de post-production image et son pour le cinéma et la musique. Ses équipes travaillent simultanément sur deux sites : le site de post-production à Paris (20e) et le studio de musique à Montreuil. Les flux vidéo non compressés (4K/RAW) et audio multipistes représentent des volumes de données massifs.",
+            contexte: "Une entreprise de post-production image et son (cinéma et musique) répartit ses équipes sur deux sites : un site de post-production à Paris et un studio à Montreuil. Les flux vidéo non compressés (4K/RAW) et audio multipistes représentent des volumes de données massifs.",
             besoin: "Relier les deux sites distants avec une bande passante très élevée (100 Gb/s) et une latence minimale afin de permettre le travail collaboratif en temps réel sur les serveurs de stockage partagés, tout en isolant proprement les sous-réseaux de chaque site.",
             objectifs: [
-                "Mettre en œuvre une liaison optique directe à 100 Gb/s entre Paris 20e et Montreuil via le réseau optique de RATP Connect (tunnels de la ligne 9 du métro) et l'opérateur IELO.",
+                "Mettre en œuvre une liaison optique directe à 100 Gb/s entre les deux sites de Paris et Montreuil.",
                 "Concevoir et configurer une architecture d'interconnexion en niveau 3 (routage IP L3) plutôt qu'un simple pontage L2 afin d'éviter la propagation des domaines de broadcast entre les deux sites.",
                 "Tester la continuité optique, la négociation à 100 Gb/s, le routage inter-VLAN et les débits réels."
             ],
             environnementTechnique: [
-                "Liaison fibre optique 100 Gb/s opérée via l'infrastructure RATP Connect (ligne 9 du métro parisien) et IELO",
+                "Liaison fibre optique noire dédiée à 100 Gb/s entre Paris et Montreuil",
                 "Équipements de commutation/routage L3 haute capacité avec interfaces optiques 100G (QSFP28)",
-                "Plan d'adressage IP routé entre les réseaux de production de Paris et de Montreuil",
+                "Plan d'adressage IP routé entre les réseaux de production des deux sites",
                 "Outils de mesure optique et de test de débit réseau (iperf / monitoring d'interfaces)"
             ],
             etapes: [
                 "1. Étude et conception : définition du plan d'adressage IP d'interconnexion, des tables de routage L3 et du choix des modules optiques 100G adaptés à l'atténuation du parcours.",
-                "2. Coordination opérateurs : suivi de la livraison de la fibre dans les baies des deux sites avec les équipes IELO / RATP Connect.",
+                "2. Coordination opérateurs : suivi de la livraison de la fibre dans les baies des deux sites.",
                 "3. Installation matérielle : insertion des transceivers optiques 100G, jarretière fibre sur les tiroirs optiques et contrôle des niveaux de puissance lumineuse (dBm).",
                 "4. Configuration L3 : paramétrage des interfaces d'interconnexion point-à-point, des routes inter-sites et des règles de filtrage.",
-                "5. Validation : tests de latence, validation de la montée du lien à 100 Gb/s full-duplex et recette avec les flux métiers audio/vidéo du client."
+                "5. Validation : tests de latence, validation de la montée du lien à 100 Gb/s full-duplex et recette avec les flux métiers audio/vidéo."
             ],
             difficultesSolutions: [
                 {
                     difficulte: "Éviter qu'une tempête de broadcast ou une boucle sur un site ne paralyse le second site de production.",
-                    solution: "Choix d'une architecture routée en niveau 3 (L3) avec sous-réseau d'interconnexion dédié (/30 ou /31), cloisonnant les domaines L2 de Paris et de Montreuil."
+                    solution: "Choix d'une architecture routée en niveau 3 (L3) avec sous-réseau d'interconnexion dédié (/30 ou /31), cloisonnant les domaines L2 de chaque site."
                 },
                 {
-                    difficulte: "Exigence de budget optique strict sur une fibre traversant le réseau souterrain du métro.",
+                    difficulte: "Exigence de budget optique strict sur une liaison fibre longue distance souterraine.",
                     solution: "Vérification précise des valeurs d'atténuation (DOM/DDM sur les transceivers) et nettoyage rigoureux des connecteurs optiques avant mise en service."
                 }
             ],
-            resultats: "Liaison 100 Gb/s opérationnelle à très faible latence entre Paris 20e et Montreuil, permettant aux ingénieurs du son et monteurs cinéma d'accéder instantanément aux médias lourds d'un site à l'autre.",
+            resultats: "Liaison 100 Gb/s opérationnelle à très faible latence entre Paris et Montreuil, permettant aux équipes de production d'accéder instantanément aux médias lourds d'un site à l'autre.",
             captures: [
-                { titre: "Topologie L3 Paris (20e) ↔ Montreuil via Ligne 9", legende: "Interconnexion 100 Gb/s routée sur infrastructure fibre RATP Connect / IELO." },
+                { titre: "Topologie L3 inter-sites Paris ↔ Montreuil à 100 Gb/s", legende: "Interconnexion 100 Gb/s routée sur infrastructure fibre optique dédiée." },
                 { titre: "Recette du lien 100G & Routage inter-sites", legende: "Validation de la synchronisation optique et de l'isolation des domaines de diffusion." }
             ],
             liens: {
-                docPdf: "docs/dossier-technique-polyson.pdf",
-                siteExterne: "https://polyson.fr",
+                docPdf: "docs/dossier-technique-liaison-100g.pdf",
+                siteExterne: "",
                 github: ""
             }
         },
@@ -754,19 +754,19 @@ const PORTFOLIO_DATA = {
     // ------------------------------------------------------------------------
     tableauSynthese: [
         {
-            titre: "Réseau du nouveau siège de Qonto (11 000 m², 9 étages, ~900 postes)",
+            titre: "Déploiement réseau LAN & Wi-Fi d'un nouveau siège social (11 000 m², 9 étages, ~900 postes)",
             lieu: "BoucheCousue",
             periode: "2025 – 2026",
             categorie: "En entreprise",
-            realisationId: "real-qonto",
+            realisationId: "real-siege-lan",
             competences: ["B1.4", "B1.5"]
         },
         {
-            titre: "Réseau L3 Paris ↔ Montreuil à 100 Gb/s (Client Polyson, fibre RATP Connect / IELO)",
+            titre: "Interconnexion fibre optique L3 inter-sites à 100 Gb/s (Paris ↔ Montreuil)",
             lieu: "BoucheCousue",
             periode: "2025 – 2026",
             categorie: "En entreprise",
-            realisationId: "real-polyson",
+            realisationId: "real-liaison-100g",
             competences: ["B1.4", "B1.5"]
         },
         {
@@ -929,8 +929,8 @@ const PORTFOLIO_DATA = {
                 poste: "Alternant Technicien Systèmes et Réseaux",
                 entreprise: "BoucheCousue — Paris 10e",
                 points: [
-                    "Déploiement réseau LAN/Wi-Fi du nouveau siège de Qonto (11 000 m², 9 étages, ~900 postes).",
-                    "Interconnexion routée L3 à 100 Gb/s entre Paris 20e et Montreuil pour Polyson (fibre RATP Connect / IELO).",
+                    "Déploiement réseau LAN/Wi-Fi haute densité de nouveaux sièges sociaux (jusqu'à 11 000 m², 9 étages, ~900 postes).",
+                    "Interconnexion routée L3 à 100 Gb/s inter-sites entre Paris et Montreuil sur liaison fibre optique dédiée.",
                     "Audits Wi-Fi sur site par sonde, réseaux de coworkings, liens FTTH/FTTO avec secours 4G/5G.",
                     "Support N1/N2, infogérance (Microsoft 365, Jamf, Synology) et sûreté IP (caméras, 2N, Ajax)."
                 ]
@@ -957,6 +957,6 @@ const PORTFOLIO_DATA = {
         hebergeur: "GitHub Pages (GitHub, Inc. — 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA) / Koyeb (Koyeb SAS, Paris, France)",
         objet: "Portfolio personnel et pédagogique réalisé dans le cadre des épreuves professionnelles (E4, E5, E6) du BTS Services Informatiques aux Organisations (SIO).",
         donneesPersonnelles: "Ce site ne dépose aucun cookie publicitaire ou de pistage. Le seul stockage local (localStorage) sert à mémoriser votre préférence d'affichage (thème clair ou sombre). Les données saisies dans le formulaire de contact servent exclusivement à répondre à votre message.",
-        proprieteIntellectuelle: "L'ensemble des textes, schémas et codes sources de ce portfolio sont la propriété de Luis Ferreira (licence MIT). Les marques citées (Ingetis, BoucheCousue, Qonto, Polyson, Cisco Meraki, Ubiquiti, Proxmox) appartiennent à leurs propriétaires respectifs."
+        proprieteIntellectuelle: "L'ensemble des textes, schémas et codes sources de ce portfolio sont la propriété de Luis Ferreira (licence MIT). Les marques citées (Ingetis, BoucheCousue, Cisco Meraki, Ubiquiti, Proxmox) appartiennent à leurs propriétaires respectifs."
     }
 };

@@ -20,14 +20,14 @@ mysite/
 │   │   ├── data.js                          # TOUTES les données centralisées (Ingetis, BoucheCousue, projets E6, veille, CV)
 │   │   └── main.js                          # Logique Vanilla JS (rendu dynamique, filtres, modales, thème)
 │   ├── docs/
-│   │   ├── tableau-de-synthese-e5.pdf       # Tableau de synthèse officiel en PDF téléchargeable
-│   │   ├── tableau-de-synthese-e5.png       # Aperçu haute définition du tableau officiel
-│   │   ├── CV_Luis_Ferreira.pdf             # PDF placeholder du CV (à remplacer par votre CV final)
-│   │   ├── dossier-technique-qonto.pdf      # PDF placeholder du dossier technique Qonto
-│   │   ├── dossier-technique-polyson.pdf    # PDF placeholder du dossier technique Polyson 100 Gb/s
-│   │   ├── dossier-technique-infogerance.pdf# PDF placeholder du dossier technique Support / Audits Wi-Fi
-│   │   ├── dossier-technique-mirror.pdf     # PDF placeholder de la documentation Mirror Linux
-│   │   └── dossier-technique-proxmox.pdf    # PDF placeholder de la documentation Proxmox VE
+│   │   ├── tableau-de-synthese-e5.pdf         # Tableau de synthèse officiel en PDF téléchargeable
+│   │   ├── tableau-de-synthese-e5.png         # Aperçu haute définition du tableau officiel
+│   │   ├── CV_Luis_Ferreira.pdf               # PDF placeholder du CV (à remplacer par votre CV final)
+│   │   ├── dossier-technique-siege-lan.pdf    # PDF placeholder du dossier technique Siège Social LAN/Wi-Fi
+│   │   ├── dossier-technique-liaison-100g.pdf # PDF placeholder du dossier technique Liaison L3 100 Gb/s
+│   │   ├── dossier-technique-infogerance.pdf  # PDF placeholder du dossier technique Support / Audits Wi-Fi
+│   │   ├── dossier-technique-mirror.pdf       # PDF placeholder de la documentation Mirror Linux
+│   │   └── dossier-technique-proxmox.pdf      # PDF placeholder de la documentation Proxmox VE
 │   ├── styles.css                           # Redirection @import vers css/style.css
 │   ├── script.js                            # Script de compatibilité
 │   ├── robots.txt                           # Directives d'indexation
@@ -48,7 +48,7 @@ Toutes les informations affichées sur le site sont regroupées dans un unique f
 - **`PORTFOLIO_DATA.btsSio`** : présentation des options SISR / SLAM et des épreuves E4, E5, E6.
 - **`PORTFOLIO_DATA.referentiel` & `competencesTechniques`** : les 3 blocs officiels du référentiel BTS SIO et vos jauges techniques filtrables (`reseau`, `wifi`, `systeme`, `securite`, `code`).
 - **`PORTFOLIO_DATA.experiences`** : la timeline de votre alternance (2j école Ingetis / 3j entreprise BoucheCousue).
-- **`PORTFOLIO_DATA.realisations`** : vos fiches détaillées pour l'oral (Qonto, Polyson 100 Gb/s, Support/Infogérance, Mirror, Proxmox VE, Portugal Towers & CellularFR, Edge Linky TIC).
+- **`PORTFOLIO_DATA.realisations`** : vos fiches détaillées pour l'oral (Siège social LAN/Wi-Fi, Interconnexion L3 100 Gb/s, Support/Infogérance, Mirror, Proxmox VE, Portugal Towers & CellularFR, Edge Linky TIC).
 - **`PORTFOLIO_DATA.tableauSynthese`** : les lignes du tableau interactif croisant vos réalisations avec les 6 compétences du Bloc 1 (`B1.1` à `B1.6`).
 - **`PORTFOLIO_DATA.veille`** : votre dossier de veille technologique sur le **Wi-Fi 7 (802.11be)** (problématique, méthodologie, articles datés et conclusion).
 - **`PORTFOLIO_DATA.cv`** : l'aperçu imprimable de votre CV et le lien vers `docs/CV_Luis_Ferreira.pdf`.
@@ -56,8 +56,8 @@ Toutes les informations affichées sur le site sont regroupées dans un unique f
 ### Remplacer un PDF placeholder par votre vrai PDF
 Tous les PDF vides (placeholders valides) ont déjà été créés dans `public/docs/` pour qu'aucun bouton ne renvoie d'erreur 404 :
 - `public/docs/CV_Luis_Ferreira.pdf`
-- `public/docs/dossier-technique-qonto.pdf`
-- `public/docs/dossier-technique-polyson.pdf`
+- `public/docs/dossier-technique-siege-lan.pdf`
+- `public/docs/dossier-technique-liaison-100g.pdf`
 - `public/docs/dossier-technique-infogerance.pdf`
 - `public/docs/dossier-technique-mirror.pdf`
 - `public/docs/dossier-technique-proxmox.pdf`
