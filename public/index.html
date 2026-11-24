@@ -1,637 +1,484 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
-    <title>Luis Ferreira - Portfolio BTS SIO SISR</title>
-    <meta name="description" content="Portfolio de Luis Ferreira, étudiant en BTS SIO option SISR en alternance chez BoucheCousue : réseaux, WiFi, systèmes, télécoms et infrastructure.">
-    <meta name="keywords" content="Luis Ferreira, BTS SIO, SISR, portfolio, alternance, BoucheCousue, réseau, WiFi, Meraki, UniFi, Linux, Proxmox, télécoms">
+    <!-- Balises Meta SEO & Référencement -->
+    <title>Luis Ferreira — Portfolio BTS SIO option SISR (Ingetis Paris · BoucheCousue)</title>
+    <meta name="description" content="Portfolio BTS SIO option SISR de Luis Ferreira, étudiant à Ingetis Paris et alternant technicien systèmes et réseaux chez BoucheCousue : réalisations professionnelles E5/E6, tableau de synthèse, compétences, veille Wi-Fi 7 et CV.">
+    <meta name="keywords" content="Luis Ferreira, BTS SIO, SISR, Ingetis, E4, E5, E6, portfolio, alternance, BoucheCousue, Qonto, Polyson, réseau, WiFi 7, Meraki, UniFi, Linux, Proxmox, télécoms">
     <meta name="author" content="Luis Ferreira">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Luis Ferreira - Portfolio BTS SIO SISR">
-    <meta property="og:description" content="Étudiant en BTS SIO SISR, alternant technicien systèmes et réseaux chez BoucheCousue.">
+    <meta property="og:title" content="Luis Ferreira — Portfolio BTS SIO SISR (Ingetis Paris)">
+    <meta property="og:description" content="Support officiel des épreuves E4, E5 et E6 du BTS SIO option SISR — Étudiant chez Ingetis Paris & Alternant chez BoucheCousue.">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-    <!-- Preconnect to external domains -->
+    <!-- Préconnexion Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Typographies Inter & JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">LF</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Accueil</a></li>
-                <li><a href="#about" class="nav-link">Profil</a></li>
-                <li><a href="#alternance" class="nav-link">Alternance</a></li>
-                <li><a href="#projects" class="nav-link">Réalisations</a></li>
-                <li><a href="#skills" class="nav-link">Compétences</a></li>
-                <li><a href="#synthese" class="nav-link">Synthèse</a></li>
-                <li><a href="#veille" class="nav-link">Veille</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Lien d'évitement pour l'accessibilité clavier -->
+    <a href="#home" class="skip-link">Aller au contenu principal</a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="greeting">
-                    <span class="greeting-text">Bonjour, je suis</span>
-                </div>
-                <h1 class="hero-title">
-                    <span class="highlight">Luis Ferreira</span>
-                </h1>
-                <p class="hero-subtitle">Étudiant en BTS SIO option SISR</p>
-                <p class="hero-description">Alternant technicien systèmes et réseaux chez <strong>BoucheCousue</strong>, intégrateur IT à Paris. Je participe au déploiement et à l'exploitation des réseaux, du WiFi et des accès internet de clients professionnels.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Voir mes réalisations</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-buttons">
-                            <span class="btn-red"></span>
-                            <span class="btn-yellow"></span>
-                            <span class="btn-green"></span>
-                        </div>
-                        <span class="window-title">luis@sisr: ~</span>
-                    </div>
-                    <div class="window-content">
-                        <div class="code-line"><span class="prompt">$</span> <span class="command">whoami</span></div>
-                        <div class="code-line"><span class="output">luis_ferreira</span></div>
-                        <div class="code-line"><span class="prompt">$</span> <span class="command">cat formation.txt</span></div>
-                        <div class="code-line"><span class="output">BTS SIO | option SISR | alternance</span></div>
-                        <div class="code-line"><span class="prompt">$</span> <span class="command">cat entreprise.txt</span></div>
-                        <div class="code-line"><span class="output">BoucheCousue | Paris 10e | IT &amp; réseau</span></div>
-                        <div class="code-line"><span class="prompt">$</span> <span class="command">./deploy --site client</span></div>
-                        <div class="code-line"><span class="output typing">Réseau opérationnel ✔</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Profil</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Je prépare un BTS <strong>Services Informatiques aux Organisations</strong>, option <strong>SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux), en alternance chez BoucheCousue.</p>
-                    <p>Passionné par les réseaux et les télécoms depuis plusieurs années, je mène en parallèle des projets personnels d'hébergement de serveurs et de cartographie des réseaux mobiles. L'alternance me permet d'appliquer ces compétences sur des infrastructures en production, pour des clients professionnels.</p>
-                </div>
-
-                <div class="info-grid">
-                    <div class="info-card">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h4>Formation</h4>
-                        <p>BTS SIO option SISR, en alternance</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-building"></i>
-                        <h4>Entreprise</h4>
-                        <p>BoucheCousue, intégrateur IT à Paris</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-briefcase"></i>
-                        <h4>Poste</h4>
-                        <p>Technicien systèmes et réseaux</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-broadcast-tower"></i>
-                        <h4>Centres d'intérêt</h4>
-                        <p>Télécoms, réseaux mobiles, auto-hébergement</p>
-                    </div>
-                </div>
-
-                <div class="about-text bts-box">
-                    <h3><i class="fas fa-circle-info"></i> Le BTS SIO option SISR</h3>
-                    <p>Diplôme de niveau bac+2 qui forme aux métiers de l'informatique en entreprise. L'option SISR porte sur l'installation, l'administration, la supervision et la sécurisation des réseaux, des serveurs et des postes de travail.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Alternance Section -->
-    <section id="alternance" class="alternance">
-        <div class="container">
-            <h2 class="section-title">Mon alternance</h2>
-
-            <div class="company-card">
-                <div class="company-header">
-                    <div class="project-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <div>
-                        <h3>BoucheCousue</h3>
-                        <p class="company-tagline">« Tout votre IT, un seul partenaire »</p>
-                    </div>
-                    <a href="https://bouchecousue.com" target="_blank" rel="noopener" class="project-link company-link"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="company-body">
-                    <p>BoucheCousue est un intégrateur IT basé rue de la Grange aux Belles à Paris (10e). L'entreprise prend en charge l'informatique de ses clients, de la conception à l'exploitation : accès internet, réseau et WiFi, infogérance, téléphonie, visioconférence et sûreté (vidéosurveillance, contrôle d'accès, alarme).</p>
-                    <p>Elle accompagne des grands comptes, des startups, des coworkings et lieux ouverts au public, des hôtels et des boutiques. Côté accès internet, elle gère un parc important de liens FTTH, FTTO et 4G/5G sans être opérateur.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Cisco Meraki</span>
-                        <span class="tech-tag">Ubiquiti UniFi</span>
-                        <span class="tech-tag">Synology</span>
-                        <span class="tech-tag">Microsoft 365</span>
-                        <span class="tech-tag">Jamf</span>
-                        <span class="tech-tag">Ajax</span>
-                        <span class="tech-tag">2N</span>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="sub-title">Réalisations professionnelles</h3>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <span class="realisation-client">Client Qonto</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Réseau du nouveau siège de Qonto</h3>
-                        <p>Qonto est une néobanque pour les entreprises et les indépendants. J'ai participé au déploiement du réseau de son nouveau siège, impasse Bonne Nouvelle à Paris (10e) : 11 000 m² sur 9 étages et environ 900 postes de travail à raccorder en filaire et en WiFi.</p>
-                        <ul class="realisation-skills">
-                            <li>Installer, tester et déployer une solution d'infrastructure réseau</li>
-                            <li>Mettre à disposition des utilisateurs un service informatique</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span class="tech-tag">LAN</span>
-                            <span class="tech-tag">WiFi</span>
-                            <span class="tech-tag">Switchs</span>
-                            <span class="bloc-tag">Bloc 1</span>
-                            <span class="bloc-tag">Bloc 2</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-route"></i>
-                        </div>
-                        <span class="realisation-client">Client Polyson</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Réseau L3 Paris ↔ Montreuil à 100 Gb/s</h3>
-                        <p>Polyson est une manufacture de post-production image et son pour le cinéma et la musique. J'ai participé à l'interconnexion en niveau 3 (routage) de son site de post-production à Paris (20e) et de son studio de musique à Montreuil par une fibre optique à 100 Gb/s. La fibre passe dans les tunnels de la ligne 9 du métro, via RATP Connect et l'opérateur IELO.</p>
-                        <ul class="realisation-skills">
-                            <li>Concevoir une solution d'infrastructure réseau</li>
-                            <li>Installer, tester et déployer une solution d'infrastructure réseau</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span class="tech-tag">Fibre optique</span>
-                            <span class="tech-tag">100 Gb/s</span>
-                            <span class="tech-tag">Routage L3</span>
-                            <span class="tech-tag">RATP Connect</span>
-                            <span class="tech-tag">IELO</span>
-                            <span class="bloc-tag">Bloc 2</span>
-                        </div>
-                        <div class="project-url">
-                            <a href="https://polyson.fr" target="_blank" rel="noopener" class="project-link-url">
-                                <i class="fas fa-globe"></i> polyson.fr
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="sub-title">Mes missions au quotidien</h3>
-            <div class="missions-grid">
-                <div class="mission-card">
-                    <i class="fas fa-wifi"></i>
-                    <h4>Déploiement réseau et WiFi</h4>
-                    <p>Installation et configuration de switchs et de bornes Cisco Meraki et Ubiquiti UniFi chez les clients : VLAN, SSID, réseau invité.</p>
-                    <span class="bloc-tag">Bloc 2</span>
-                </div>
-                <div class="mission-card">
-                    <i class="fas fa-satellite-dish"></i>
-                    <h4>Audit WiFi</h4>
-                    <p>Mesures sur site avec une sonde WiFi, cartes de couverture et conseils sur le placement des bornes et le choix des canaux.</p>
-                    <span class="bloc-tag">Bloc 2</span>
-                </div>
-                <div class="mission-card">
-                    <i class="fas fa-network-wired"></i>
-                    <h4>Accès internet</h4>
-                    <p>Mise en service de liens fibre FTTH et FTTO, avec secours 4G/5G, et configuration des routeurs et pare-feux pour la bascule.</p>
-                    <span class="bloc-tag">Bloc 2</span>
-                    <span class="bloc-tag">Bloc 3</span>
-                </div>
-                <div class="mission-card">
-                    <i class="fas fa-headset"></i>
-                    <h4>Support et infogérance</h4>
-                    <p>Traitement des demandes des utilisateurs, dépannage sur site et à distance, gestion du parc (Microsoft 365, Jamf), téléphonie IP et salles de visioconférence.</p>
-                    <span class="bloc-tag">Bloc 1</span>
-                </div>
-                <div class="mission-card">
-                    <i class="fas fa-video"></i>
-                    <h4>Sûreté</h4>
-                    <p>Installation de caméras de vidéosurveillance, de contrôle d'accès (interphones 2N) et d'alarmes Ajax.</p>
-                    <span class="bloc-tag">Bloc 3</span>
-                </div>
-                <div class="mission-card">
-                    <i class="fas fa-users"></i>
-                    <h4>Coworkings et lieux ouverts</h4>
-                    <p>Réseaux de coworkings et de lieux ouverts au public : WiFi haute densité, réseaux invités et séparation des réseaux entre les entreprises résidentes.</p>
-                    <span class="bloc-tag">Bloc 2</span>
-                    <span class="bloc-tag">Bloc 3</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projets personnels</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://mirror.bakertelekom.fr" class="project-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Mirror</h3>
-                        <p>Serveur miroir public de distributions Linux : synchronisation automatique des dépôts, service HTTP et suivi de la bande passante pour offrir des téléchargements rapides à la communauté.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Linux</span>
-                            <span class="tech-tag">rsync</span>
-                            <span class="tech-tag">Serveur web</span>
-                            <span class="bloc-tag">Bloc 2</span>
-                        </div>
-                        <div class="project-url">
-                            <a href="https://mirror.bakertelekom.fr" target="_blank" rel="noopener" class="project-link-url">
-                                <i class="fas fa-globe"></i> mirror.bakertelekom.fr
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-cubes"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Serveur Proxmox</h3>
-                        <p>Serveur dédié sous Proxmox VE : virtualisation de machines Debian, réseau des VM, sauvegardes et hébergement de mes services et API.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Proxmox VE</span>
-                            <span class="tech-tag">Debian</span>
-                            <span class="tech-tag">Virtualisation</span>
-                            <span class="bloc-tag">Bloc 2</span>
-                            <span class="bloc-tag">Bloc 3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-broadcast-tower"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://portugaltowers.eu" class="project-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Portugal Towers</h3>
-                        <p>Base de données publique des antennes mobiles de tous les opérateurs portugais, alimentée par une application Android qui relève les cellules 4G/5G sur le terrain.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Télécoms</span>
-                            <span class="tech-tag">Android / Kotlin</span>
-                            <span class="tech-tag">Cartographie</span>
-                            <span class="bloc-tag">Bloc 1</span>
-                        </div>
-                        <div class="project-url">
-                            <a href="https://portugaltowers.eu" target="_blank" rel="noopener" class="project-link-url">
-                                <i class="fas fa-globe"></i> portugaltowers.eu
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-signal"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://cellularfr.fr" class="project-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>CellularFR</h3>
-                        <p>Base de données Netmonster des antennes Orange France, pour cartographier l'infrastructure mobile française.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Orange France</span>
-                            <span class="tech-tag">Base de données</span>
-                            <span class="tech-tag">4G / 5G</span>
-                            <span class="bloc-tag">Bloc 1</span>
-                        </div>
-                        <div class="project-url">
-                            <a href="https://cellularfr.fr" target="_blank" rel="noopener" class="project-link-url">
-                                <i class="fas fa-globe"></i> cellularfr.fr
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-plug"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/luisbaker/EdgeLinkyTIC" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Edge Linky TIC</h3>
-                        <p>Driver SmartThings Edge qui lit les données du compteur Linky via un module TIC pour suivre la consommation électrique dans la domotique.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Lua</span>
-                            <span class="tech-tag">IoT</span>
-                            <span class="tech-tag">SmartThings</span>
-                            <span class="bloc-tag">Bloc 1</span>
-                        </div>
-                        <div class="project-url">
-                            <a href="https://github.com/luisbaker/EdgeLinkyTIC" target="_blank" rel="noopener" class="project-link-url">
-                                <i class="fab fa-github"></i> luisbaker/EdgeLinkyTIC
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Compétences</h2>
-
-            <div class="bloc-grid">
-                <div class="bloc-card">
-                    <div class="bloc-number">Bloc 1</div>
-                    <h3>Support et mise à disposition de services informatiques</h3>
-                    <ul>
-                        <li>Gérer le patrimoine informatique</li>
-                        <li>Répondre aux incidents et aux demandes d'assistance</li>
-                        <li>Développer la présence en ligne de l'organisation</li>
-                        <li>Travailler en mode projet</li>
-                        <li>Mettre à disposition un service informatique</li>
-                        <li>Organiser son développement professionnel</li>
-                    </ul>
-                    <p class="bloc-where"><i class="fas fa-location-dot"></i> Support, gestion de parc, téléphonie, Portugal Towers</p>
-                </div>
-                <div class="bloc-card">
-                    <div class="bloc-number">Bloc 2 SISR</div>
-                    <h3>Administration des systèmes et des réseaux</h3>
-                    <ul>
-                        <li>Concevoir une solution d'infrastructure réseau</li>
-                        <li>Installer, tester et déployer une solution d'infrastructure réseau</li>
-                        <li>Exploiter, dépanner et superviser une solution d'infrastructure réseau</li>
-                    </ul>
-                    <p class="bloc-where"><i class="fas fa-location-dot"></i> Siège Qonto, lien 100 Gb/s Polyson, audits WiFi, Mirror, Proxmox</p>
-                </div>
-                <div class="bloc-card">
-                    <div class="bloc-number">Bloc 3</div>
-                    <h3>Cybersécurité des services informatiques</h3>
-                    <ul>
-                        <li>Protéger les données à caractère personnel</li>
-                        <li>Préserver l'identité numérique de l'organisation</li>
-                        <li>Sécuriser les équipements et les usages des utilisateurs</li>
-                        <li>Garantir la disponibilité, l'intégrité et la confidentialité des services</li>
-                        <li>Assurer la cybersécurité d'une infrastructure réseau</li>
-                    </ul>
-                    <p class="bloc-where"><i class="fas fa-location-dot"></i> Pare-feux et bascule 4G/5G, sûreté, sauvegardes</p>
-                </div>
-            </div>
-
-            <h3 class="sub-title">Outils et technologies</h3>
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <i class="fas fa-network-wired"></i>
-                    <span>Réseau</span>
-                    <small>VLAN, routage, DHCP, DNS, VPN</small>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-wifi"></i>
-                    <span>WiFi</span>
-                    <small>Cisco Meraki, Ubiquiti UniFi, audit</small>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-server"></i>
-                    <span>Systèmes</span>
-                    <small>Linux Debian, Windows, Synology</small>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-cubes"></i>
-                    <span>Virtualisation</span>
-                    <small>Proxmox VE</small>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-broadcast-tower"></i>
-                    <span>Télécoms</span>
-                    <small>FTTH, FTTO, 4G, 5G</small>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-terminal"></i>
-                    <span>Scripts</span>
-                    <small>Bash, Python</small>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Synthesis Section -->
-    <section id="synthese" class="synthese">
-        <div class="container">
-            <h2 class="section-title">Tableau de synthèse</h2>
-            <p class="section-intro">Mes réalisations pour l'épreuve E5 et les compétences du bloc 1 qu'elles mobilisent.</p>
-            <div class="table-wrapper">
-                <table class="synthese-table">
-                    <thead>
-                        <tr>
-                            <th>Réalisation</th>
-                            <th>Lieu</th>
-                            <th title="Gérer le patrimoine informatique">Patrimoine</th>
-                            <th title="Répondre aux incidents et aux demandes d'assistance et d'évolution">Incidents</th>
-                            <th title="Développer la présence en ligne de l'organisation">Présence en ligne</th>
-                            <th title="Travailler en mode projet">Mode projet</th>
-                            <th title="Mettre à disposition des utilisateurs un service informatique">Mise à dispo</th>
-                            <th title="Organiser son développement professionnel">Dév. pro</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Réseau du nouveau siège de Qonto</strong></td>
-                            <td>BoucheCousue</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="check">✔</td>
-                            <td class="check">✔</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Réseau L3 Paris ↔ Montreuil 100 Gb/s (Polyson)</strong></td>
-                            <td>BoucheCousue</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="check">✔</td>
-                            <td class="check">✔</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Support et infogérance des clients</strong></td>
-                            <td>BoucheCousue</td>
-                            <td class="check">✔</td>
-                            <td class="check">✔</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Veille technologique Wi-Fi 7</strong></td>
-                            <td>Formation</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="check">✔</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="synthese-legend">Patrimoine : gérer le patrimoine informatique · Incidents : répondre aux incidents et aux demandes d'assistance et d'évolution · Présence en ligne : développer la présence en ligne de l'organisation · Mode projet : travailler en mode projet · Mise à dispo : mettre à disposition des utilisateurs un service informatique · Dév. pro : organiser son développement professionnel</p>
-            <h3 class="sub-title">Document officiel E5</h3>
-            <div class="pdf-frame">
-                <a href="docs/tableau-de-synthese-e5.pdf" target="_blank" rel="noopener" title="Ouvrir le PDF">
-                    <img src="docs/tableau-de-synthese-e5.png" alt="Tableau de synthèse officiel E5 de Luis Ferreira, session 2026" class="pdf-preview" loading="lazy" width="1800" height="2546">
+    <!-- ====================================================================
+         BARRE DE NAVIGATION FIXE
+         ==================================================================== -->
+    <header>
+        <nav class="navbar" aria-label="Navigation principale">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo" aria-label="Accueil Luis Ferreira">
+                    <span class="logo-text">LF</span>
+                    <span class="logo-badge">BTS SIO · SISR</span>
                 </a>
-            </div>
-            <div class="synthese-download">
-                <a href="docs/tableau-de-synthese-e5.pdf" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fas fa-file-pdf"></i> Ouvrir le PDF en plein écran</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Veille Section -->
-    <section id="veille" class="veille">
-        <div class="container">
-            <h2 class="section-title">Veille technologique</h2>
-            <div class="veille-content">
-                <div class="veille-main">
-                    <h3><i class="fas fa-wifi"></i> Le Wi-Fi 7 (802.11be)</h3>
-                    <p>Le WiFi étant au cœur de mes missions chez BoucheCousue, j'ai choisi de suivre l'arrivée du Wi-Fi 7, certifié par la Wi-Fi Alliance depuis janvier 2024.</p>
-                    <ul>
-                        <li><strong>MLO (Multi-Link Operation)</strong> : un appareil utilise plusieurs bandes en même temps pour plus de débit et moins de latence.</li>
-                        <li><strong>Canaux de 320 MHz</strong> dans la bande 6 GHz, deux fois plus larges qu'en Wi-Fi 6E.</li>
-                        <li><strong>4096-QAM</strong> pour faire passer plus de données dans le même signal.</li>
-                        <li><strong>En Europe</strong>, seule la partie basse de la bande 6 GHz (5945 à 6425 MHz) est ouverte, ce qui limite le nombre de canaux larges.</li>
-                    </ul>
-                </div>
-                <div class="veille-sources">
-                    <h4>Comment je fais ma veille</h4>
-                    <ul>
-                        <li><i class="fab fa-linkedin"></i> <strong>LinkedIn</strong> : abonné à des listes de diffusion (newsletters) et aux pages des acteurs du réseau et des télécoms.</li>
-                        <li><i class="fas fa-comments"></i> <strong>Forum <a href="https://lafibre.info" target="_blank" rel="noopener" class="contact-link">lafibre.info</a></strong> : je participe aux discussions sur la fibre, la 4G/5G et le WiFi.</li>
-                        <li><i class="fas fa-globe"></i> <strong>Sources officielles</strong> : Wi-Fi Alliance, ARCEP, sites des constructeurs (Cisco Meraki, Ubiquiti).</li>
-                    </ul>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Accueil</a></li>
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#bts-sio" class="nav-link">BTS SIO</a></li>
+                    <li><a href="#skills" class="nav-link">Compétences</a></li>
+                    <li><a href="#synthese" class="nav-link">Synthèse</a></li>
+                    <li><a href="#alternance" class="nav-link">Alternance</a></li>
+                    <li><a href="#projects" class="nav-link">Réalisations E6</a></li>
+                    <li><a href="#veille" class="nav-link">Veille</a></li>
+                    <li><a href="#cv" class="nav-link">CV</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <!-- Bouton Mode Clair / Sombre mémorisé dans localStorage -->
+                    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Activer le mode clair" title="Changer de thème (Clair / Sombre)">
+                        <i class="fas fa-sun" aria-hidden="true"></i>
+                    </button>
+
+                    <!-- Menu Burger Mobile -->
+                    <button type="button" class="hamburger" id="hamburger-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="nav-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Me contacter</h3>
-                    <p>Pour toute question sur mon parcours ou mes réalisations, vous pouvez me contacter par email ou sur LinkedIn. Mon code est disponible sur GitHub.</p>
+    <main>
+        <!-- ================================================================
+             1. SECTION ACCUEIL (HERO SANS PHOTO + TERMINAL INTERACTIF)
+             ================================================================ -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="greeting">
+                        <span class="greeting-text">Portfolio Officiel BTS SIO (Réforme 2020)</span>
+                        <span class="option-pill"><i class="fas fa-server"></i> Option SISR · École Ingetis Paris · Session 2026</span>
+                    </div>
 
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:iluisferreira1516@gmail.com" class="contact-link">iluisferreira1516@gmail.com</a>
+                    <h1 class="hero-title">
+                        <span class="highlight">Luis Ferreira</span>
+                    </h1>
+                    <p class="hero-subtitle">Étudiant en BTS SIO option SISR à Ingetis Paris · Alternant Technicien Systèmes &amp; Réseaux</p>
+                    <p class="hero-description">
+                        Alternant technicien systèmes et réseaux chez <strong><a href="https://bouchecousue.com" target="_blank" rel="noopener" class="inline-link">BoucheCousue</a></strong>, intégrateur IT à Paris (10<sup>e</sup>), dans le cadre de mon BTS SIO chez <strong><a href="https://www.ingetis.com" target="_blank" rel="noopener" class="inline-link">Ingetis</a></strong> (Paris 5<sup>e</sup>). Je participe à la conception, au déploiement et à l'exploitation des réseaux LAN/L3, du Wi-Fi haute densité, des liaisons fibre optique et des infrastructures systèmes de clients professionnels.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-network-wired"></i> Voir mes réalisations
+                        </a>
+                        <a href="docs/CV_Luis_Ferreira.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+                            <i class="fas fa-file-arrow-down"></i> Télécharger mon CV (PDF)
+                        </a>
+                        <a href="#synthese" class="btn btn-outline">
+                            <i class="fas fa-table"></i> Tableau de synthèse
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fenêtre Terminal avec effet machine à écrire -->
+                <div class="hero-visual">
+                    <div class="code-window" role="region" aria-label="Terminal de présentation">
+                        <div class="window-header">
+                            <div class="window-buttons" aria-hidden="true">
+                                <span class="btn-red"></span>
+                                <span class="btn-yellow"></span>
+                                <span class="btn-green"></span>
                             </div>
+                            <span class="window-title">luis@sisr: ~/ingetis-portfolio</span>
                         </div>
-                        <div class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/luis-ferreira-5aa571257/" target="_blank" rel="noopener" class="contact-link">Luis Ferreira</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/luisbaker/" target="_blank" rel="noopener" class="contact-link">github.com/luisbaker</a>
-                            </div>
+                        <div class="window-content" id="terminal-lines">
+                            <!-- Rendu dynamique par js/main.js à partir de js/data.js -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <!-- ================================================================
+             2. SECTION À PROPOS (Parcours Ingetis + BoucheCousue, objectifs, qualités)
+             ================================================================ -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">À propos de moi</h2>
+                <p class="section-intro">Présentation, parcours en alternance chez Ingetis Paris et BoucheCousue, objectifs professionnels et qualités mises en œuvre sur le terrain.</p>
+
+                <div class="about-content">
+                    <div class="about-text" id="about-presentation">
+                        <!-- Rendu dynamique depuis PORTFOLIO_DATA.aPropos -->
+                    </div>
+
+                    <div class="info-grid" id="about-info-grid">
+                        <!-- Cartes École Ingetis, Entreprise BoucheCousue, Spécialités, Intérêts -->
+                    </div>
+
+                    <h3 class="sub-title">Mes qualités professionnelles</h3>
+                    <div class="qualites-grid" id="about-qualites-grid">
+                        <!-- Cartes Qualités -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             3. SECTION BTS SIO (Options SISR/SLAM, 3 Blocs & Épreuves E4/E5/E6)
+             ================================================================ -->
+        <section id="bts-sio" class="bts-section">
+            <div class="container">
+                <h2 class="section-title">Le BTS SIO chez Ingetis Paris (Réforme 2020)</h2>
+                <p class="section-intro" id="bts-intro"></p>
+
+                <h3 class="sub-title">Les deux spécialités du diplôme</h3>
+                <div class="bts-options-grid" id="bts-options-grid">
+                    <!-- Cartes SISR (mise en avant) et SLAM -->
+                </div>
+
+                <h3 class="sub-title">Les épreuves professionnelles (E4, E5, E6) &amp; les 3 blocs</h3>
+                <div class="epreuves-grid" id="bts-epreuves-grid">
+                    <!-- Cartes E4, E5, E6 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             4. SECTION COMPÉTENCES (Blocs 1, 2 SISR, 3 + Jauges filtrables)
+             ================================================================ -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Compétences du référentiel &amp; Stack technique</h2>
+                <p class="section-intro">Les compétences officielles des 3 blocs du référentiel BTS SIO (option SISR) ainsi que mes compétences techniques évaluées par domaine.</p>
+
+                <!-- Les 3 blocs officiels du référentiel -->
+                <div class="bloc-grid" id="referentiel-blocs-grid">
+                    <!-- Rendu dynamique de Bloc 1 (6 compétences), Bloc 2 SISR (3 compétences), Bloc 3 (5 compétences) -->
+                </div>
+
+                <!-- Compétences techniques filtrables par catégorie -->
+                <h3 class="sub-title">Compétences techniques &amp; Outils</h3>
+                <div class="filter-bar" role="tablist" aria-label="Filtrer les compétences techniques par catégorie">
+                    <button type="button" class="filter-btn active" data-skill-filter="all">Toutes</button>
+                    <button type="button" class="filter-btn" data-skill-filter="reseau"><i class="fas fa-network-wired"></i> Réseaux &amp; Fibre</button>
+                    <button type="button" class="filter-btn" data-skill-filter="wifi"><i class="fas fa-wifi"></i> Wi-Fi &amp; Radio</button>
+                    <button type="button" class="filter-btn" data-skill-filter="systeme"><i class="fas fa-server"></i> Systèmes &amp; Proxmox</button>
+                    <button type="button" class="filter-btn" data-skill-filter="securite"><i class="fas fa-shield-alt"></i> Cybersécurité &amp; Sûreté</button>
+                    <button type="button" class="filter-btn" data-skill-filter="code"><i class="fas fa-terminal"></i> Scripts &amp; IoT</button>
+                </div>
+
+                <div class="skills-gauges-grid" id="tech-skills-grid">
+                    <!-- Jauges interactives générées par js/main.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             5. SECTION TABLEAU DE SYNTHÈSE (Interactif + PDF officiel)
+             ================================================================ -->
+        <section id="synthese" class="synthese">
+            <div class="container">
+                <h2 class="section-title">Tableau de synthèse officiel</h2>
+                <p class="section-intro">
+                    Croisement de mes réalisations professionnelles (en lignes) avec les 6 compétences du Bloc 1 du référentiel BTS SIO (en colonnes).
+                    <strong>Cliquez sur une réalisation dans le tableau pour ouvrir directement sa fiche détaillée.</strong>
+                </p>
+
+                <div class="table-wrapper">
+                    <table class="synthese-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Réalisation professionnelle</th>
+                                <th scope="col">Cadre</th>
+                                <th scope="col">Période</th>
+                                <th scope="col" title="B1.1 — Gérer le patrimoine informatique">B1.1<br>Patrimoine</th>
+                                <th scope="col" title="B1.2 — Répondre aux incidents et aux demandes d'assistance et d'évolution">B1.2<br>Incidents</th>
+                                <th scope="col" title="B1.3 — Développer la présence en ligne de l'organisation">B1.3<br>Présence en ligne</th>
+                                <th scope="col" title="B1.4 — Travailler en mode projet">B1.4<br>Mode projet</th>
+                                <th scope="col" title="B1.5 — Mettre à disposition des utilisateurs un service informatique">B1.5<br>Mise à dispo</th>
+                                <th scope="col" title="B1.6 — Organiser son développement professionnel">B1.6<br>Dév. pro</th>
+                            </tr>
+                        </thead>
+                        <tbody id="synthese-tbody">
+                            <!-- Lignes interactives générées depuis PORTFOLIO_DATA.tableauSynthese -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="synthese-legend">
+                    <strong>Légende Bloc 1 :</strong> B1.1 : Gérer le patrimoine informatique · B1.2 : Répondre aux incidents et aux demandes d'assistance et d'évolution · B1.3 : Développer la présence en ligne de l'organisation · B1.4 : Travailler en mode projet · B1.5 : Mettre à disposition des utilisateurs un service informatique · B1.6 : Organiser son développement professionnel.
+                </p>
+
+                <h3 class="sub-title">Aperçu &amp; Téléchargement du Tableau officiel signé (PDF)</h3>
+                <div class="synthese-download" style="margin-bottom: 1.5rem;">
+                    <a href="docs/tableau-de-synthese-e5.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+                        <i class="fas fa-file-pdf"></i> Ouvrir / Télécharger le Tableau de synthèse officiel (PDF)
+                    </a>
+                </div>
+                <div class="pdf-frame">
+                    <a href="docs/tableau-de-synthese-e5.pdf" target="_blank" rel="noopener" title="Ouvrir le tableau de synthèse officiel en PDF">
+                        <img src="docs/tableau-de-synthese-e5.png" alt="Tableau de synthèse officiel BTS SIO de Luis Ferreira, session 2026" class="pdf-preview" loading="lazy" width="1800" height="2546">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             6. SECTION STAGES / ALTERNANCE (Timeline)
+             ================================================================ -->
+        <section id="alternance" class="alternance">
+            <div class="container">
+                <h2 class="section-title">Expériences professionnelles &amp; Alternance</h2>
+                <p class="section-intro">Présentation de mon entreprise d'accueil BoucheCousue (en alternance avec Ingetis Paris), évolution de mes responsabilités sur les deux années du BTS SIO et compétences mobilisées.</p>
+
+                <div class="timeline" id="experiences-timeline">
+                    <!-- Timeline générée depuis PORTFOLIO_DATA.experiences -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             7. SECTION RÉALISATIONS PROFESSIONNELLES (Cœur de l'oral E5/E6)
+             ================================================================ -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Réalisations professionnelles (Dossiers E5 / E6)</h2>
+                <p class="section-intro">
+                    Sélectionnez une réalisation pour consulter sa fiche complète : contexte, besoin exprimé, objectifs, environnement technique, étapes, difficultés &amp; solutions, résultats, compétences validées et documentation PDF.
+                </p>
+
+                <!-- Barre de filtres : par cadre (Entreprise / Formation) et par technologie -->
+                <div class="projects-filters-wrapper">
+                    <div class="filter-bar" role="tablist" aria-label="Filtrer par cadre de réalisation">
+                        <button type="button" class="filter-btn active" data-project-cat="all">Toutes les réalisations (7)</button>
+                        <button type="button" class="filter-btn" data-project-cat="alternance"><i class="fas fa-building"></i> En entreprise — BoucheCousue (3)</button>
+                        <button type="button" class="filter-btn" data-project-cat="formation"><i class="fas fa-graduation-cap"></i> En formation Ingetis / Personnel (4)</button>
+                    </div>
+
+                    <div class="filter-bar secondary-filter-bar" role="tablist" aria-label="Filtrer par technologie">
+                        <button type="button" class="filter-chip active" data-project-tech="all">Toutes technos</button>
+                        <button type="button" class="filter-chip" data-project-tech="Wi-Fi">Wi-Fi / Meraki / UniFi</button>
+                        <button type="button" class="filter-chip" data-project-tech="100 Gb/s">Fibre 100 Gb/s &amp; Routage L3</button>
+                        <button type="button" class="filter-chip" data-project-tech="Debian">Linux Debian / rsync</button>
+                        <button type="button" class="filter-chip" data-project-tech="Proxmox">Proxmox VE</button>
+                        <button type="button" class="filter-chip" data-project-tech="4G/5G">Télécoms 4G/5G</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="realisations-grid">
+                    <!-- Cartes de réalisations avec bouton d'ouverture de modale détaillée -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             8. SECTION VEILLE TECHNOLOGIQUE (Wi-Fi 7 / IEEE 802.11be)
+             ================================================================ -->
+        <section id="veille" class="veille">
+            <div class="container">
+                <h2 class="section-title">Veille technologique</h2>
+                <p class="section-intro">Suivi de l'évolution des standards réseaux sans-fil dans le cadre de la compétence B1.6 « Organiser son développement professionnel ».</p>
+
+                <div class="veille-hero-card" id="veille-header-box">
+                    <!-- Sujet, problématique et 4 innovations clés du Wi-Fi 7 -->
+                </div>
+
+                <h3 class="sub-title">Méthodologie &amp; Outils de veille</h3>
+                <div class="veille-method-grid" id="veille-method-grid">
+                    <!-- Outils et sources (lafibre.info, Wi-Fi Alliance, ARCEP, LinkedIn, RSS) -->
+                </div>
+
+                <h3 class="sub-title">Articles &amp; Publications analysés (Chronologie)</h3>
+                <div class="veille-articles-grid" id="veille-articles-grid">
+                    <!-- Cartes datées avec résumé et impact SISR -->
+                </div>
+
+                <div class="veille-conclusion-card" id="veille-conclusion-box">
+                    <!-- Synthèse et conclusion -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             9. SECTION CURRICULUM VITAE (Aperçu & Téléchargement PDF)
+             ================================================================ -->
+        <section id="cv" class="cv-section">
+            <div class="container">
+                <h2 class="section-title">Curriculum Vitae</h2>
+                <p class="section-intro">Synthèse de mon parcours chez Ingetis Paris et BoucheCousue. Vous pouvez télécharger le PDF, l'imprimer ou consulter le tableau de synthèse officiel E5.</p>
+
+                <div class="cv-actions-bar">
+                    <a href="docs/CV_Luis_Ferreira.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+                        <i class="fas fa-file-pdf"></i> Télécharger mon CV (PDF)
+                    </a>
+                    <button type="button" class="btn btn-secondary" onclick="window.print()">
+                        <i class="fas fa-print"></i> Imprimer l'aperçu CV
+                    </button>
+                    <a href="docs/tableau-de-synthese-e5.pdf" target="_blank" rel="noopener" class="btn btn-outline">
+                        <i class="fas fa-table"></i> Tableau de synthèse E5 (PDF)
+                    </a>
+                </div>
+
+                <div id="cv-preview-card">
+                    <!-- Aperçu structuré du CV généré par js/main.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             10. SECTION CONTACT (Formulaire validé en JS + Liens directs)
+             ================================================================ -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-intro">Une question du jury ou d'un recruteur sur mon parcours ou mes réalisations ? Contactez-moi via ce formulaire ou directement par email et LinkedIn.</p>
+
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h3>Coordonnées directes</h3>
+                        <p>Disponible à Paris et en Île-de-France pour échanger autour de l'administration systèmes, des réseaux d'entreprise et des télécoms.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:iluisferreira1516@gmail.com" class="contact-link">iluisferreira1516@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/luis-ferreira-5aa571257/" target="_blank" rel="noopener" class="contact-link">Luis Ferreira</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/luisbaker" target="_blank" rel="noopener" class="contact-link">github.com/luisbaker</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <h3>Envoyer un message</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Nom complet *</label>
+                                <input type="text" id="contact-name" name="name" placeholder="Votre nom et prénom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Adresse email *</label>
+                                <input type="email" id="contact-email" name="email" placeholder="votre.email@exemple.fr" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Sujet *</label>
+                            <input type="text" id="contact-subject" name="subject" placeholder="Ex. : Épreuve BTS SIO / Opportunité Systèmes & Réseaux" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" rows="4" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <div id="contact-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====================================================================
+         11. PIED DE PAGE & MENTIONS LÉGALES
+         ==================================================================== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2026 Luis Ferreira · Portfolio BTS SIO SISR</p>
+                <div>
+                    <p>&copy; 2026 <strong>Luis Ferreira</strong> · Portfolio BTS SIO option SISR — École Ingetis Paris &amp; BoucheCousue</p>
+                    <p class="footer-sublinks">
+                        <a href="#synthese">Tableau de synthèse</a> ·
+                        <a href="#projects">Réalisations</a> ·
+                        <a href="#veille">Veille Wi-Fi 7</a> ·
+                        <a href="#" id="open-mentions-legales">Mentions légales &amp; RGPD</a>
+                    </p>
+                </div>
                 <div class="social-links">
-                    <a href="https://github.com/luisbaker/" target="_blank" rel="noopener" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/luis-ferreira-5aa571257/" target="_blank" rel="noopener" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:iluisferreira1516@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/luisbaker/" target="_blank" rel="noopener" class="social-link" aria-label="Profil GitHub de Luis Ferreira"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/luis-ferreira-5aa571257/" target="_blank" rel="noopener" class="social-link" aria-label="Profil LinkedIn de Luis Ferreira"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:iluisferreira1516@gmail.com" class="social-link" aria-label="Envoyer un email à Luis Ferreira"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Bouton Retour en haut -->
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Retour en haut de la page" title="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ====================================================================
+         MODALE DÉTAILLÉE D'UNE RÉALISATION PROFESSIONNELLE (E5 / E6)
+         ==================================================================== -->
+    <div id="realisation-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <button type="button" class="modal-close" data-close-modal aria-label="Fermer la fiche">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="realisation-modal-body" class="modal-body">
+                <!-- Contenu injecté dynamiquement au clic sur une réalisation -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================================================
+         MODALE DES MENTIONS LÉGALES
+         ==================================================================== -->
+    <div id="mentions-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="mentions-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-sm">
+            <button type="button" class="modal-close" data-close-modal aria-label="Fermer les mentions légales">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="mentions-modal-body" class="modal-body">
+                <!-- Contenu injecté depuis PORTFOLIO_DATA.mentionsLegales -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts JS : données centralisées puis logique applicative -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
